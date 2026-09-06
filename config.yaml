@@ -1,0 +1,24 @@
+refresh_interval: 5
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+
+metrics:
+  collection_interval: 5
+
+disk:
+  path: "/"
+
+file_checker:
+  local_directory: "C:\\local\\dlls"
+  remote_directory: "\\\\server\\share\\dlls"
+  include_patterns: ["*.dll"]
+  exclude_patterns: []
+  scan_interval: 30
+  
+logging:
+  enabled: true
+  file: "exporter.log"
+  level: "INFO"
+
